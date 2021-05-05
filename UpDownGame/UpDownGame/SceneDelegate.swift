@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  HelloWorld
 //
-//  Created by 배성환 on 2021/05/03.
+//  Created by Gomrenade on 2021/05/03.
 //
 
 import UIKit

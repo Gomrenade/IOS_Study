@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74091B8A2642A813002BDF22 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74091B892642A813002BDF22 /* CreditViewController.swift */; };
 		7430ECC4263FF0D500A73FF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430ECC3263FF0D500A73FF3 /* AppDelegate.swift */; };
 		7430ECC6263FF0D500A73FF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430ECC5263FF0D500A73FF3 /* SceneDelegate.swift */; };
 		7430ECC8263FF0D500A73FF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430ECC7263FF0D500A73FF3 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74091B892642A813002BDF22 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
 		7430ECC0263FF0D500A73FF3 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7430ECC3263FF0D500A73FF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7430ECC5263FF0D500A73FF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				7430ECC3263FF0D500A73FF3 /* AppDelegate.swift */,
 				7430ECC5263FF0D500A73FF3 /* SceneDelegate.swift */,
 				7430ECC7263FF0D500A73FF3 /* ViewController.swift */,
+				74091B892642A813002BDF22 /* CreditViewController.swift */,
 				7430ECC9263FF0D500A73FF3 /* Main.storyboard */,
 				7430ECCC263FF0D600A73FF3 /* Assets.xcassets */,
 				7430ECCE263FF0D600A73FF3 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 				7430ECC8263FF0D500A73FF3 /* ViewController.swift in Sources */,
 				7430ECC4263FF0D500A73FF3 /* AppDelegate.swift in Sources */,
 				7430ECC6263FF0D500A73FF3 /* SceneDelegate.swift in Sources */,
+				74091B8A2642A813002BDF22 /* CreditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UpDownGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UpDownGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
