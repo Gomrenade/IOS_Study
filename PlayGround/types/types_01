@@ -1,0 +1,19 @@
+greenPortal.isActive = false
+var toggleCounter = 0
+
+while true {
+    moveForward()
+    if toggleCounter == 3 {
+        break
+    }
+    if isOnClosedSwitch {
+        toggleSwitch()
+        toggleCounter += 1
+    }
+    if !isBlocked && !isBlockedLeft && !isBlockedRight {
+        turnLeft()
+    } else if isBlocked{
+        turnRight()
+        turnRight()
+    }
+}
