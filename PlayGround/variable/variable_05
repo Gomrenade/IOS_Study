@@ -1,0 +1,26 @@
+var gemCounter = 0
+var toggleCounter = 0
+
+while true {
+    if gemCounter == 3 && toggleCounter == 4 {
+        break
+    }
+    if isOnGem {
+        if gemCounter < 3 {
+            collectGem()
+            gemCounter = gemCounter + 1
+        }
+    }
+    if isOnClosedSwitch {
+        if toggleCounter < 4 {
+            toggleSwitch()
+            toggleCounter = toggleCounter + 1
+        }
+    }
+    if isBlocked && isBlockedLeft {
+        turnRight()
+    } else if isBlocked && isBlockedRight {
+        turnLeft()
+    }
+    moveForward()
+}
