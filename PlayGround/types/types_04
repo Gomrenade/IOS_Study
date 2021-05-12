@@ -1,0 +1,30 @@
+func onGemOrToggle() {
+    if isOnGem {
+        collectGem()
+        gemCounter += 1
+    }
+    if isOnClosedSwitch {
+        toggleSwitch()
+        toggleCounter += 1
+    }
+}
+
+var gemCounter = 0
+var toggleCounter = 0
+
+while true {
+    if isBlocked {
+        turnLeft()
+    } else if !isBlockedLeft {
+        turnLeft()
+    }
+    moveForward()
+    onGemOrToggle()
+    if toggleCounter == 1 || gemCounter >= 1 {
+        greenPortal.isActive = false
+    } else if toggleCounter >= 4 {
+        greenPortal.isActive = true
+        orangePortal.isActive = false
+    }
+}
+
