@@ -1,0 +1,26 @@
+var gemCounter = 0
+
+
+while true {
+    moveForward()
+    if isOnGem {
+        collectGem()
+        gemCounter += 1
+    }
+    if isBlocked {
+        turnLeft()
+        turnLeft()
+    }
+    if gemCounter == 1 {
+        bluePortal.isActive = false
+        pinkPortal.isActive = false
+    } else if gemCounter == 2 {
+        bluePortal.isActive = true
+    } else if gemCounter == 3 {
+        pinkPortal.isActive = true
+    } else if gemCounter == 4 {
+        break
+    }
+}
+
+
