@@ -1,0 +1,35 @@
+let totalGems = randomNumberOfGems
+var gemCounter = 0
+
+func statusPinkPotal() {
+    if pinkPortal.isActive && isBlocked {
+        pinkPortal.isActive = false
+        turnLeft()
+    } else if !pinkPortal.isActive && isBlocked {
+        pinkPortal.isActive = true
+        turnLeft()
+    }
+}
+func statusBluePotal() {
+    if bluePortal.isActive && isBlocked {
+        bluePortal.isActive = false
+        turnLeft()
+    } else if !bluePortal.isActive && isBlocked {
+        bluePortal.isActive = true
+        turnLeft()
+    }
+}
+while true{
+    moveForward()
+    if isOnGem {
+        collectGem()
+        gemCounter += 1
+    }
+    statusPinkPotal()
+    statusBluePotal()
+    if totalGems == gemCounter {
+        break
+    }
+}
+
+
