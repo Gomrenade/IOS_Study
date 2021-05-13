@@ -14,17 +14,26 @@ var toggleCounter = 0
 
 while true {
     if isBlocked {
-        turnLeft()
-    } else if !isBlockedLeft {
-        turnLeft()
+        if isBlockedLeft{
+            turnRight()
+        } else {
+            turnLeft()
+        }
+    } else {
+        moveForward()
     }
-    moveForward()
+    if !isBlockedLeft {
+        turnLeft()
+    } 
     onGemOrToggle()
     if toggleCounter == 1 || gemCounter >= 1 {
         greenPortal.isActive = false
     } else if toggleCounter >= 4 {
         greenPortal.isActive = true
         orangePortal.isActive = false
+    }
+    if toggleCounter == 6 && gemCounter == 6 {
+        break
     }
 }
 
