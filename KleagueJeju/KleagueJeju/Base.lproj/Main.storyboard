@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KleagueJeju" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기 일정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBP-JB-UBR">
+                                <rect key="frame" x="152" y="44" width="110.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1hC-aF-11c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleListViewCell" rowHeight="149" id="4Di-Kv-XfL" customClass="ScheduleListViewCell" customModule="KleagueJeju" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Di-Kv-XfL" id="oTv-QK-it2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21년 8월 27일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjA-32-YU3">
+                                                    <rect key="frame" x="157" y="26" width="100" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-yf-uQ6">
+                                                    <rect key="frame" x="10" y="10" width="79" height="129"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K04" translatesAutoresizingMaskIntoConstraints="NO" id="dLp-Zy-VWF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="79" height="99"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="dLp-Zy-VWF" secondAttribute="height" multiplier="8:10" id="WhL-s6-WMB"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제주" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba9-0J-rcP">
+                                                            <rect key="frame" x="24" y="107" width="31" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="dLp-Zy-VWF" firstAttribute="top" secondItem="7ef-yf-uQ6" secondAttribute="top" id="1ud-Qu-E2O"/>
+                                                        <constraint firstItem="dLp-Zy-VWF" firstAttribute="leading" secondItem="7ef-yf-uQ6" secondAttribute="leading" id="SVE-Nc-sLf"/>
+                                                        <constraint firstItem="ba9-0J-rcP" firstAttribute="centerX" secondItem="7ef-yf-uQ6" secondAttribute="centerX" id="bP6-3U-IrB"/>
+                                                        <constraint firstItem="ba9-0J-rcP" firstAttribute="width" secondItem="dLp-Zy-VWF" secondAttribute="width" multiplier="0.388158" id="eH0-ca-mgm"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dLp-Zy-VWF" secondAttribute="trailing" id="hOy-jh-wtZ"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH4-Jr-4z4">
+                                                    <rect key="frame" x="190.5" y="59.5" width="33.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i9Q-02-QfO">
+                                                    <rect key="frame" x="325" y="10" width="79" height="129"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="K09" translatesAutoresizingMaskIntoConstraints="NO" id="CjU-DG-EQW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="79" height="99"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="CjU-DG-EQW" secondAttribute="height" multiplier="8:10" id="dzQ-E9-r74"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7L-eA-W3K">
+                                                            <rect key="frame" x="24" y="107" width="31" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="G7L-eA-W3K" firstAttribute="centerX" secondItem="i9Q-02-QfO" secondAttribute="centerX" id="Ajd-GQ-tI1"/>
+                                                        <constraint firstItem="G7L-eA-W3K" firstAttribute="width" secondItem="CjU-DG-EQW" secondAttribute="width" multiplier="0.388158" id="YQb-Fk-KQX"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제주 월드컵 경기장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZD-t5-DZH">
+                                                    <rect key="frame" x="144" y="113.5" width="126.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i9Q-02-QfO" firstAttribute="centerY" secondItem="oTv-QK-it2" secondAttribute="centerY" id="98T-5N-QjP"/>
+                                                <constraint firstAttribute="trailing" secondItem="i9Q-02-QfO" secondAttribute="trailing" constant="10" id="E0e-p3-qbu"/>
+                                                <constraint firstItem="GjA-32-YU3" firstAttribute="top" secondItem="oTv-QK-it2" secondAttribute="topMargin" constant="15" id="GlZ-dO-ejg"/>
+                                                <constraint firstItem="QH4-Jr-4z4" firstAttribute="centerY" secondItem="oTv-QK-it2" secondAttribute="centerY" id="IJA-58-5iB"/>
+                                                <constraint firstItem="GjA-32-YU3" firstAttribute="centerX" secondItem="oTv-QK-it2" secondAttribute="centerX" id="PEz-cm-45l"/>
+                                                <constraint firstItem="7ef-yf-uQ6" firstAttribute="top" secondItem="oTv-QK-it2" secondAttribute="top" constant="10" id="VoM-qB-4Wh"/>
+                                                <constraint firstItem="QH4-Jr-4z4" firstAttribute="centerX" secondItem="oTv-QK-it2" secondAttribute="centerX" id="WTq-mn-A4R"/>
+                                                <constraint firstItem="1ZD-t5-DZH" firstAttribute="centerX" secondItem="oTv-QK-it2" secondAttribute="centerX" id="Zh0-To-KM0"/>
+                                                <constraint firstItem="7ef-yf-uQ6" firstAttribute="leading" secondItem="oTv-QK-it2" secondAttribute="leading" constant="10" id="d67-tn-VLQ"/>
+                                                <constraint firstItem="7ef-yf-uQ6" firstAttribute="centerY" secondItem="oTv-QK-it2" secondAttribute="centerY" id="hHi-x1-v1I"/>
+                                                <constraint firstItem="i9Q-02-QfO" firstAttribute="top" secondItem="oTv-QK-it2" secondAttribute="top" constant="10" id="lKd-dX-MVa"/>
+                                                <constraint firstAttribute="bottom" secondItem="1ZD-t5-DZH" secondAttribute="bottom" constant="15" id="tjH-xH-rra"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="awayTeam" destination="G7L-eA-W3K" id="Y5G-Ze-JfY"/>
+                                            <outlet property="awayTeamMark" destination="CjU-DG-EQW" id="c5U-1Z-H47"/>
+                                            <outlet property="homeTeam" destination="ba9-0J-rcP" id="rZz-PZ-sUV"/>
+                                            <outlet property="homeTeamMark" destination="dLp-Zy-VWF" id="tX6-cZ-kWf"/>
+                                            <outlet property="scheduleDate" destination="GjA-32-YU3" id="2UN-uy-bh0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBP-JB-UBR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6wP-MF-Uzk"/>
+                            <constraint firstItem="1hC-aF-11c" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="INs-Qs-vXf"/>
+                            <constraint firstItem="gBP-JB-UBR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jlb-FQ-hwa"/>
+                            <constraint firstItem="1hC-aF-11c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RKL-Mu-V2J"/>
+                            <constraint firstItem="1hC-aF-11c" firstAttribute="top" secondItem="gBP-JB-UBR" secondAttribute="bottom" constant="8" symbolic="YES" id="W1X-Ve-PVR"/>
+                            <constraint firstAttribute="bottom" secondItem="1hC-aF-11c" secondAttribute="bottom" id="mv1-ou-ojm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleList" destination="1hC-aF-11c" id="T9V-nM-VEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="K04" width="79" height="79"/>
+        <image name="K09" width="79" height="79"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
